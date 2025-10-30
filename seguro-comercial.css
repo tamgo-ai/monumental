@@ -1,0 +1,97 @@
+.seguro-casa-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: stretch; 
+}
+
+.seguro-casa-contenido > div {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;  
+    border-radius: 20px;
+}
+
+.seguro-casa-contenido p {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.seguro-casa-contenido img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover; 
+}
+
+.seguro-casa-contenido__texto {
+    padding: 1rem 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 820px) {
+    .seguro-casa-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .seguro-casa-contenido > div:nth-child(odd) {
+        order: 1; 
+    }
+
+    .seguro-casa-contenido > div:nth-child(even) {
+        order: 2; 
+    }
+
+    .seguro-casa-contenido > div {
+        height: auto; 
+    }
+
+    .seguro-casa-contenido img {
+        height: auto; 
+    }
+}
+
+.pd-3rem-y {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.mensaje-seccion-bottom {
+    background-color: #9b1d22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hero-comercial {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+    url("/images/seguro-comercial/Hero-comercial.png");                            
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  position: relative;
+  color: black;  /* texto oscuro para contraste con el overlay blanco */
+}
+
+.hero-copy h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-copy {
+  background: rgba(255, 255, 255, 0.2); /* fondo blanco translúcido */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: inline-block; /* se ajusta solo al contenido */
+}

@@ -1,0 +1,175 @@
+.mt-3rem {
+  margin-top: 4rem !important;
+}
+
+.servicios-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 3rem 20px;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+
+.servicios-container h3 {
+  margin-bottom: 2rem;
+}
+
+.servicios-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+/* Servicio individual */
+.servicio {
+  background-color: #1a2f5a;
+  color: white;
+  flex: 1 1 auto; /* permite crecer según el contenido */
+  max-width: 250px;
+  min-width: 220px;
+  border: 2px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out;
+}
+
+.servicio:hover {
+  transform: scale(1.03);
+}
+
+/* Imagen del servicio */
+.servicio-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.servicio-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Texto del servicio */
+.servicio-texto {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1; /* permite que el texto expanda el servicio */
+}
+
+.servicio-texto p {
+  margin: 0;
+}
+
+.servicio-texto .bold-text {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablets y móviles: una columna */
+@media (max-width: 992px) {
+  .servicios-inner {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* centra los servicios en columna */
+  }
+  .servicio {
+    max-width: 90%;
+    width: 100%;
+  }
+  .servicio-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .servicios-inner {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .servicio {
+    max-width: 95%;
+    width: 100%;
+  }
+  .servicio-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+
+.puedes-elegir {
+  text-align: left;       /* texto alineado a la izquierda */
+  max-width: 100%;        /* no más ancho que el contenedor */
+  margin: 0 auto;         /* centrado horizontal */
+  color: white;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .puedes-elegir {
+        width: 100%;
+    }
+}
+
+.oficinas-locaciones,
+.oficinas-locaciones__card {
+    color: black !important;
+}
+
+.black-text {
+    color: black !important;
+}
+
+.oficinas-locaciones__card__texto {
+    text-align: left !important;
+}
+
+.contenedor-recomendaciones {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.contenedor-recomendaciones h2 {
+    margin: 0;
+}
+
+.image-divider {
+  width: 100%;
+  height: 550px; 
+  overflow: hidden;
+}
+
+.image-divider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}

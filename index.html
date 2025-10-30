@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "InsuranceAgency",
+        "name": "Monumental General Insurance Agency",
+        "url": "https://www.monumentalinsurance.com/",
+        "telephone": "866-208-4745",
+        "areaServed": "US-CA",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "...",
+          "addressLocality": "...",
+          "addressRegion": "CA",
+          "postalCode": "..."
+        }
+      }
+    </script>
+
+    <meta
+      name="description"
+      content="Agencia de seguros Monumental General Insurance Agency: ofrecemos cobertura completa y personalizada para proteger lo que más valoras."
+    />
+    <meta
+      name="keywords"
+      content="seguros, agencia de seguros, protección, seguro de auto, seguro de hogar"
+    />
+    <meta name="author" content="Monumental General Insurance Agency" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Open Graph básico + imagen -->
+    <meta property="og:title" content="Monumental General Insurance Agency" />
+    <meta
+      property="og:description"
+      content="Agencia de seguros Monumental General Insurance Agency: ofrecemos cobertura completa y personalizada para proteger lo que más valoras."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.monumentalinsurance.com/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.monumentalinsurance.com/images/home/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Monumental General Insurance Agency" />
+    <meta
+      name="twitter:description"
+      content="Agencia de seguros Monumental General Insurance Agency: ofrecemos cobertura completa y personalizada para proteger lo que más valoras."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.monumentalinsurance.com/images/home/og-image.jpg"
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.monumentalinsurance.com/" />
+
+    <title>Monumental General Insurance Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home-page.css" />
+    <link rel="stylesheet" href="seguro-casa.css" />
+  </head>
+  <body>
+    <header class="site-header"></header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="menuBackdrop" class="menu-backdrop" aria-hidden="true"></div>
+    <aside id="mobileMenu" class="mobile-menu" aria-hidden="true"></aside>
+
+    <!-- HERO -->
+    <section class="hero-home">
+      <a
+        href="tel:+18662084745"
+        style="display: block; width: 100%; height: 100%"
+      >
+        <picture>
+          <!-- Para pantallas muy grandes (más de 1440px, por ejemplo) -->
+          <source
+            srcset="images/home/DIMENSIONES-NEW.jpg"
+            media="(min-width: 1440px)"
+          />
+
+          <!-- Para escritorio (más de 1024px) -->
+          <source
+            srcset="images/home/DIMENSIONES-NEW.jpg"
+            media="(min-width: 1025px)"
+          />
+
+          <!-- Para tablets (entre 768px y 1024px) -->
+          <source
+            srcset="images/home/COMERCIAL2-04.jpg"
+            media="(max-width: 1024px)"
+          />
+
+          <!-- Para teléfonos (menos de 768px) -->
+          <source
+            srcset="images/home/COMERCIAL2-03.jpg"
+            media="(max-width: 767px)"
+          />
+
+          <!-- Imagen por defecto -->
+          <img
+            src="images/home/DIMENSIONES-NEW.jpg"
+            alt="Hero"
+            class="hero-image"
+          />
+        </picture>
+      </a>
+    </section>
+
+    <!-- COTIZACIÓN RÁPIDA -->
+    <section id="cotizacion" class="quote"></section>
+
+    <!-- PARAGUAS / COBERTURA -->
+    <section id="seguros" class="cover-section">
+      <div class="cover-container">
+        <div class="cover-wrap">
+          <img
+            src="images/home/SOMBRILLAS.png"
+            alt="Paraguas"
+            class="cover-image"
+          />
+
+          <div class="services-grid">
+            <div class="services-group group-left">
+              <a href="auto-insurance.html" class="service-card-new">
+                <div class="card-icon"><i class="fa-solid fa-car"></i></div>
+                <div class="card-text">Seguro de Auto</div>
+              </a>
+
+              <a href="casa-inquilino.html" class="service-card-new">
+                <div class="card-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="card-text">Seguro de Casa &amp; Inquilinos</div>
+              </a>
+
+              <a href="comercial-insurance.html" class="service-card-new">
+                <div class="card-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="card-text">Seguro Comercial</div>
+              </a>
+
+              <a href="business-insurance.html" class="service-card-new">
+                <div class="card-icon"><i class="fa-solid fa-store"></i></div>
+                <div class="card-text">Seguro para Negocios</div>
+              </a>
+            </div>
+
+            <div class="services-group group-right">
+              <a href="mexico-insurance.html" class="service-card-new">
+                <div class="card-icon">
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class="card-text">Seguro Para México</div>
+              </a>
+
+              <a href="eventos-insurance.html" class="service-card-new">
+                <div class="card-icon">
+                  <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+                <div class="card-text">Seguro para Eventos &amp; Fiestas</div>
+              </a>
+
+              <a href="moto-insurance.html" class="service-card-new">
+                <div class="card-icon">
+                  <i class="fa-solid fa-motorcycle"></i>
+                </div>
+                <div class="card-text">Seguro Para Moto</div>
+              </a>
+
+              <a href="registration-services.html" class="service-card-new">
+                <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
+                <div class="card-text">Servicio de Registraciones</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="cover-sub red-letters adjusted-font-size">
+          Desde seguros de auto hasta seguros para negocios, ofrecemos
+          soluciones de cobertura completas diseñadas para proteger lo que más
+          te importa.
+        </p>
+      </div>
+    </section>
+
+    <!-- OTROS SERVICIOS -->
+    <section id="other-services" class="other-services-section">
+      <div class="os-container">
+        <h3 class="os-title">Otros Servicios</h3>
+        <div class="os-cards-grid">
+          <!-- Card 1 -->
+          <article class="os-card">
+            <h4 class="os-card-title">Servicio de Registraciones</h4>
+            <ul class="os-card-list">
+              <li>Cambios de nombre o estado</li>
+              <li>Renovación de placas al instante</li>
+              <li>Transferencia de títulos</li>
+              <li>Reemplazo de stickers</li>
+              <li>Duplicados de títulos</li>
+            </ul>
+            <img
+              class="os-card-img"
+              src="images/home/img127.jpg"
+              alt="Placa 2025"
+              loading="lazy"
+            />
+            <a href="registration-services.html" class="os-card-btn">Ver más</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="os-card">
+            <h4 class="os-card-title">Servicios de Impuestos</h4>
+            <ul class="os-card-list">
+              <li>Forma carta y larga</li>
+              <li>Trámite de número ITIN</li>
+              <li>Recibe un máximo reembolsos</li>
+              <li>Depósito Directo</li>
+              <li>Presención Electrónica (e-file)</li>
+            </ul>
+            <img
+              class="os-card-img"
+              src="images/home/TAXES_1.png"
+              alt="Dólares"
+              loading="lazy"
+            />
+            <a href="taxes-insurance.html" class="os-card-btn">Ver más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="w-100 flex-center" id="nosotros">
+      <div class="contenedor flex-center w-100">
+        <h3 class="red-letters centered-text large-font ">
+          ¿Por qué elegir a Monumental<br />
+          General Insurance?
+        </h3>
+        <p class="medium-font-size">
+          Servimos, no competimos. Experimenta la diferencia que hace un
+          servicio de seguros personalizado.
+        </p>
+      </div>
+
+      <div class="seguro-casa-contenido contenedor">
+        <div class="seguro-casa-contenido__texto">
+          <h2 class="red-text bold-text large-font title-adjusted">
+            Mejoramos tu precio y cobertura actual.
+          </h2>
+
+          <br />
+
+          <p class="adjusted-font-size">
+            Protege lo que más importa con nuestros planes de seguros
+            personalizados. Ofrecemos soluciones flexibles, asesoría experta y
+            acompañamiento en cada paso del camino. Estamos aquí para ayudarte a
+            vivir con confianza.
+          </p>
+        </div>
+
+        <div>
+          <img src="/images/home/IMAGANES-01.png" alt="familia feliz" />
+        </div>
+
+        <div>
+          <img src="/images/home/IMAGANES-02.png" alt="Firmando documentos" />
+        </div>
+
+        <div class="seguro-casa-contenido__texto">
+          <h2 class="red-text bold-text large-font title-adjusted">Servicio personalizado.</h2>
+
+          <br />
+
+          <p class="adjusted-font-size">
+            Cada persona y situación es diferente, por eso te ofrecemos un
+            servicio totalmente personalizado. Nuestros asesores te escuchan,
+            entienden tus necesidades y diseñan soluciones hechas especialmente
+            para tí.
+          </p>
+        </div>
+
+        <div class="seguro-casa-contenido__texto">
+          <h2 class="red-text bold-text large-font title-adjusted">
+            Asistencia con tu reclamo de principio a fin.
+          </h2>
+
+          <br />
+
+          <p class="adjusted-font-size">
+            En caso de cualquier eventualidad, no estás solo. Te guiamos desde
+            el primer contacto hasta la resolución completa del reclamo. Nos
+            encargamos de que el proceso sea claro, rápido y sin complicaciones.
+          </p>
+        </div>
+
+        <div>
+          <img src="/images/home/IMAGANES-03.png" alt="Cliente Satisfecho" />
+        </div>
+      </div>
+    </main>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonials">
+      <div class="contenedor testimonials-inner">
+        <div class="test-left">
+          <h2>Testimonios de<br />clientes satisfechos.</h2>
+          <img src="images/home/img120.jpg" alt="Happy Clients" />
+        </div>
+        <div class="test-right">
+          <div class="test-slider">
+            <article class="test-card">
+              <!-- <img class="avatar" src="images/home/img123.jpg" alt="Alejandra G." loading="lazy"> -->
+              <h4>Alejandra G.</h4>
+              <div class="location">Chino, CA</div>
+              <p class="quote">
+                “Me ayudaron a conseguir una cobertura completa a un precio
+                excelente. ¡Y me explicaron todo con mucha paciencia!”
+              </p>
+              <div class="source">Google</div>
+              <div class="stars">★★★★★</div>
+            </article>
+
+            <article class="test-card">
+              <!-- <img class="avatar" src="images/home/img124.jpg" alt="Luis M." loading="lazy"> -->
+              <h4>Luis M.</h4>
+              <div class="location">Ontario, CA</div>
+              <p class="quote">
+                “Tuve un accidente menor y ellos se encargaron de todo. Desde la
+                llamada inicial hasta el cheque final. Súper recomendados.”
+              </p>
+              <div class="source">Google</div>
+              <div class="stars">★★★★★</div>
+            </article>
+          </div>
+          <button class="slider-btn prev" aria-label="Anterior">‹</button>
+          <button class="slider-btn next" aria-label="Siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contacto">
+      <div class="footer-main container">
+        <nav class="policy-links">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">CALIFORNIA PRIVACY POLICY</a>
+        </nav>
+        <div></div>
+        <div class="footer-only-cta">
+          <a href="tel:+18662084745" class="btn btn-secondary">866.208.4745</a>
+        </div>
+      </div>
+
+      <div class="footer-policy">
+        <div class="container policy-inner">
+          <div class="copyright">
+            © 2025. Monumental General Insurance Agency. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/Header.js"></script>
+    <script src="scripts/FormularioCotizacion.js"></script>
+    <script src="scripts/Testimonios.js"></script>
+    <script src="scripts/Footer.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

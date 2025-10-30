@@ -1,0 +1,107 @@
+/* BENEFITS / REASONS-WHY GRID */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+  max-width: min(1100px, 92vw);
+}
+
+.reason-card {
+  border-radius: 1rem;
+  padding: .7rem 1.5rem;
+  box-shadow: 6px 10px 18px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 300px; /* mismo alto para todas */
+}
+
+/* Eliminamos las reglas de altura distintas */
+.reasons-grid .reason-card:nth-child(-n+2),
+.reasons-grid .reason-card:nth-child(n+3) {
+  height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reason-card {
+    justify-content: center;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+    height: auto; /* en móvil que se ajuste al contenido */
+  }
+}
+
+.card-six {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card-six img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; 
+  border-radius: 1rem;
+}
+
+.mb-3rem {
+    margin-bottom: 3rem !important;
+}
+
+.servicios-container,
+.servicios-inner,
+.servicio-texto,
+.puedes-elegir {
+  color: black !important;
+}
+
+.servicio {
+  background-color: white !important;
+}
+
+.puedes-elegir {
+  text-align: center !important;
+}
+
+/* Pasos Cotizacion */
+
+.pasos-cotizacion-titulo {
+  margin-top: 0;
+}
+
+.pasos-cotizacion-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pasos-cotizacion-container__card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  background-color: var(--red-700);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  height: 200px;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.green-bg {
+  background-color: #13a44c;
+}

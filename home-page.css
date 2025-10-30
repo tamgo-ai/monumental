@@ -1,0 +1,534 @@
+.hero-inner {
+    text-align: center;
+}
+
+.mb-2rem {
+    margin-bottom: 2rem !important;
+}
+
+.service-card .card-top i {
+  font-size: 7rem !important; /* Ajusta el tamaño según necesites */
+}
+
+.service-card {
+  text-decoration: none !important; /* quita subrayado */
+  color: inherit!important;        /* mantiene el color original del texto */
+}
+
+.service-card:link,
+.service-card:visited,
+.service-card:hover,
+.service-card:active {
+  text-decoration: none !important; /* sin subrayado en cualquier estado */
+  color: inherit !important;        /* mantiene el color original siempre */
+  outline: none !important;         /* quita el borde al hacer click */
+}
+
+/* === UMBRELLA RESPONSIVO - SOLO MEDIA QUERIES === */
+@media (max-width: 1024px) {
+  .umbrella-title h2 {
+    font-size: 2.2rem;
+  }
+  .service-card .card-top i {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .icons-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .service-card .card-top i {
+    font-size: 5rem;
+  }
+  .umbrella-title h2 {
+    font-size: 1.9rem;
+  }
+  .service-card .card-bottom {
+    font-size: 0.95rem;
+  }
+  .umbrella-sub {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons-group {
+    gap: 1rem;
+  }
+  .service-card .card-top i {
+    font-size: 4rem;
+  }
+  .umbrella-title h2 {
+    font-size: 1.6rem;
+  }
+  .service-card .card-bottom {
+    font-size: 0.85rem;
+  }
+  .umbrella-sub {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop: dos primeras tarjetas más altas */
+.reasons-grid .reason-card:nth-child(-n+2) {
+  height: 400px !important; 
+}
+
+/* Desktop: dos últimas tarjetas más bajas */
+.reasons-grid .reason-card:nth-child(n+3) {
+  height: 300px !important; 
+}
+
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .reasons-grid .reason-card {
+    height: auto !important;
+  }
+}
+
+.reason-card__text {
+  margin-top: 0.5rem !important; /* agrega separación */
+  position: relative !important;
+  z-index: 2 !important; /* siempre encima de fondo o imágenes */
+}
+
+.reason-card {
+  overflow: hidden !important; /* evita que el contenido se salga */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.cover-section {
+  margin-top: -2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.cover-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cover-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.cover-image {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+.cover-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.cover-title h2 {
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #e2bb15;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: -10rem; /* superposición sobre la umbrella */
+  position: relative;
+  z-index: 2;
+}
+
+.services-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.service-card-new {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* antes: clamp(180px, 20vw, 220px) */
+  aspect-ratio: 3/4;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: #002f6c;
+  font-family: sans-serif;
+}
+
+
+.service-card-new:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+/* Tablet y móvil */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr; 
+    margin-top: 2rem;
+  }
+
+  .service-card-new {
+    width: 100%;
+  }
+
+  .cover-title h2 {
+    font-size: clamp(18px, 5vw, 28px);
+  }
+}
+
+
+.card-icon {
+  flex: 1 1 60%;
+  background: #a4161a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon i {
+  color: #fff;
+  font-size: clamp(100px, 4vw, 44px);
+}
+
+.card-text {
+  flex: 0 0 40%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.75rem 0.5rem;
+  font-size: clamp(20px, 1.2vw, 16px);
+}
+
+/* Responsive: tablet y móvil */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr; 
+    margin-top: 2rem;
+  }
+
+  .service-card-new {
+    width: 100%;
+  }
+
+  .cover-title h2 {
+    font-size: clamp(18px, 5vw, 28px);
+  }
+
+  /* Ajuste tamaños icono y texto en tarjetas */
+  .card-icon i {
+    font-size: clamp(100px, 8vw, 100px);
+  }
+
+  .card-text {
+    font-size: clamp(20px, 2.5vw, 24px);
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  /* Grid principal: una columna, menos espacio entre grupos */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;        /* reduce el espacio entre left y right */
+    margin-top: 1rem; /* opcional, más cerca de la parte superior */
+  }
+
+  /* Cada grupo de iconos se adapta a la columna */
+  .services-group {
+    width: 100%;
+    height: auto; /* se ajusta al contenido */
+    gap: 1rem;
+  }
+
+  /* Card individual */
+  .service-card-new {
+    display: flex;
+    flex-direction: column;
+    width: 80%;       /* lo dejás como lo tenías */
+    aspect-ratio: 3/4; 
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: #002f6c;
+    height: 100%;     /* mantiene la altura que ya habías definido */
+  }
+
+  /* Texto dentro de la card */
+  .card-text {
+    font-size: clamp(25px, 2.5vw, 24px);
+    padding: 0.5rem;
+  }
+}
+
+
+.cover-sub {
+  text-align: center;
+  color: #605e5d;
+  margin-top: 4rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .services-grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  .cover-title h2 { font-size: clamp(18px, 5vw, 28px); }
+}
+
+@media (min-width: 700px) {
+  .services-grid {
+    margin-top: -25rem; /* antes tenías -10rem, aquí lo subimos un poco más */
+  }
+}
+
+/* =========================
+   OTROS SERVICIOS
+========================= */
+.other-services-section {
+  padding: 2rem 1rem 4rem 1rem;
+  background: #f8f8f8;
+}
+
+.os-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.os-title {
+  text-align: center;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #002f6c;
+}
+
+.os-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.os-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 80%; /* Ocupa 80% del contenedor */
+  max-width: 400px; /* opcional, para no crecer demasiado en pantallas grandes */
+}
+
+.os-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+.os-card-title {
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #a4161a;
+}
+
+.os-card-list {
+  list-style: disc inside;
+  margin-bottom: 1rem;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+.os-card-img {
+  width: 100%;
+  max-height: 220px; /* aumenta para mejor visibilidad */
+  object-fit: contain; /* la imagen se ve completa sin recortar */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.os-card-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: #a4161a;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.os-card-btn:hover {
+  background-color: #e2bb15;
+  color: #002f6c;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .os-card {
+    width: 90%;
+  }
+  .os-cards-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .os-card {
+    padding: 1rem 0.5rem;
+    width: 95%;
+  }
+  .os-card-img {
+    max-height: 180px;
+  }
+  .os-card-list {
+    font-size: 14px;
+  }
+  .os-card-btn {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+.hero-home {
+  width: 100%;
+  height: 100vh; /* ocupa toda la ventana */
+  overflow: hidden;
+}
+
+.hero-home picture,
+.hero-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-image {
+  object-fit: cover; /* para que la imagen llene el área sin deformarse */
+}
+
+
+.hero-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* hace que la imagen llene el contenedor sin deformarse */
+}
+
+
+/* Overlay */
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(119, 119, 119, 0.2); /* negro semi-transparente */
+  z-index: 1;
+}
+
+/* Contenido encima del overlay */
+.hero-home .hero-inner {
+  position: relative;
+  z-index: 2; /* aseguramos que esté sobre el overlay */
+}
+
+/* Ajuste para pantallas medianas y pequeñas */
+@media (max-width: 1300px) {
+  .hero-home {
+    background-position: center bottom; 
+    background-size: cover;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-home {
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
+
+/* Estilos de texto */
+.red-letters {
+  color: #a4161a;
+  font-weight: bold;
+}
+
+.hero-copy h1 .blue-text,
+.blue-text {
+  color: #0056ff !important; /* ejemplo de azul */
+}
+.hero-copy h1 .red-text {
+  color: #a4161a;
+}
+
+.hero-copy h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.medium-font-size {
+  font-size: clamp(20px, 2vw, 26px);
+  text-align: center;
+  width: 80%;
+}

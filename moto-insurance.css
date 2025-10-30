@@ -1,0 +1,47 @@
+.red-text {
+    color: #9b1d22 !important;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.image-divider {
+  width: 100%;
+  height: 550px; 
+  overflow: hidden;
+}
+
+.image-divider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cubrimos {
+    padding: 2rem !important;
+}
+
+.proteccion-monumental__contenido h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.proteccion-monumental__contenido span {
+  display: block;
+  margin-top: 12px; 
+  font-size: inherit; 
+  font-weight: inherit;
+}
